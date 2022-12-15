@@ -1,5 +1,8 @@
 public class HelloWorld {
+    int m =10; // instance variable
     public static void main(String[] args) {
+
+        int k=5; // local variable
         /*
         // object and classes
 
@@ -16,6 +19,7 @@ public class HelloWorld {
         Student1.Eating();
         Student1.Runing();
         */
+        /*
         // or
         //constructor
         // This constructor simply initialized all filled of the object with their default value
@@ -32,5 +36,34 @@ public class HelloWorld {
         System.out.println("Student2 sex " + student2.sex);
         System.out.println("Student2 colour " + student2.colour);
         System.out.println("Student2 age " + student2.age);
+
+         */
+        /*
+        // Encapsulation
+        /*** Access modifier ****/
+       // Student student= new Student("John",'m',"fair",25);
+
+        //Encapsulation
+        //Getter and setter
+        //student.getAge();
+       // System.out.println(student.getAge());
+
+
+
+        //  3 Static or non Static
+        // Type of variables
+        // There are three type of variable in java
+        //* local variable (non Statics)
+        //*Instance variable (non statics)
+
+        //*Static variable (Static)
+        //When a variable is decleared as static then a single copy of a variable is created and shared among all
+        //objects at a class level.
+        Student s1 = new Student();
+        Student s2 = new Student();
+        System.out.println(s1.getId()); // every time increase 1
+        System.out.println(s2.getId());
+
+
     }
 }
