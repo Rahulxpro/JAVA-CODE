@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Test_code_Arraylist {
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class Test_code_Arraylist {
         list.add("element0");
         list.add("element1");
         list.add("element2");
+        /*
         System.out.println(list);  // o/p :- [element0, element1, element2]
 
         //3- Adding element of specific position
@@ -29,5 +31,32 @@ public class Test_code_Arraylist {
         //or
         list.remove("element2");
         System.out.println(list);  //  o/p :-  [changed, Rahul]        remove element2
+
+         */
+
+        // 7- Iteration over arraylist element
+
+        // 7.1-Using for-each loop
+        for(int i =0; i< list.size(); i++){
+            System.out.println(list.get(i));  // o/p :- element0
+                                             //         element1
+                                             //         element2
+        }
+        //7.2 Using for-each loop
+        for (String s: list){
+            System.out.println(s);     // o/p :- element0
+                                      //         element1
+                                      //         element2
+
+        }
+
+        // 7.3 using Iteration interface
+        Iterator<String> iterator = list.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.hasNext());  // o/p :- element0
+                                                    //         element1
+                                                   //         element2
+        }
+
     }
 }
