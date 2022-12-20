@@ -10,6 +10,8 @@ public class Code_Test_Wrapper_class {
 
         Integer y= 18;          //Wrapping the  candy
         Integer z =y.intValue();// opening the candy
+        Integer x =19;
+        Integer T = x.intValue();
         list.add(y);
         list.add(z);
         System.out.println(list);
